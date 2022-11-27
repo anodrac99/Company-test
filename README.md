@@ -1,6 +1,6 @@
 BACK END
 
-Para ejecutar el back end ejecutar el comnado "npm run dev" este proyecto corre en el puerto 4000.
+Para ejecutar el back end ejecutar el comando "npm run dev" este proyecto corre en el puerto 4000.
 Se realizo haciendo uso de Node.js, con Express, Sequelize y Postgres.
 
 Documentación End points:
