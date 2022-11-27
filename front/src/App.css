@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1{
+  padding: 20px;
+  text-align: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://media.giphy.com/media/dCQlLfMk8ywfYdIcq7/giphy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:280vh;
+}
+
+.users-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.slide-content{
+  margin: 0 40px;
+}
+
+.card{
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px,14px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(28, 163, 128);
+  border-radius: 25px 25px 0px 25px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(28, 163, 128);
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(28, 163, 128);
+  padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid  #fff;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  font-weight: 600;
+}
